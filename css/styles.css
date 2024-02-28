@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Minion Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Minion Pro Regular"),
+    url("../minion-pro-fonts/MinionPro-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Minion Pro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Minion Pro Bold"),
+    url("../minion-pro-fonts/MinionPro-Bold.woff") format("woff");
+}
+/* font-family: "Minion Pro Regular", serif; */
+/* font-family: "Minion Pro Bold", serif; */
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+
+  background-color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../img/logo.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80% auto;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+}
+
+.section {
+  padding-top: 18px;
+  padding-bottom: 30px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.text-container {
+  max-width: 600px;
+  margin: auto;
+}
+.heading {
+  font-family: "Minion Pro Regular", serif;
+  font-size: 14px;
+  text-align: center;
+  font-weight: normal;
+}
+.upper {
+  text-transform: uppercase;
+}
+.name-container {
+  display: block;
+  width: fit-content;
+  margin: auto;
+
+  font-size: 18px;
+}
+.name-container::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.company-name::before {
+  content: "«";
+}
+.company-name {
+}
+.company-name::after {
+  content: "»";
+}
+.small-text {
+  padding-bottom: 16px;
+  text-align: center;
+  font-size: 12px;
+}
+.address {
+  padding-bottom: 16px;
+  text-align: center;
+  font-size: 12px;
+}
+.address-link {
+}
+
+.simple-text {
+  font-size: 14px;
+}
+
+.list {
+  counter-reset: my-counter;
+  font-size: 11px;
+  font-family: Calibri, sans-serif;
+}
+.list-li {
+  padding-top: 36px;
+  counter-increment: my-counter;
+}
+.list-li:first-of-type {
+  padding-top: 8px;
+}
+
+.li-text::before {
+  content: counter(my-counter) ". ";
+}
+
+.li-text {
+  padding-bottom: 24px;
+}
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.images {
+}
+
+.img-container-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  row-gap: 20px;
+}
+
+.grid-item-1 {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+.grid-item-2 {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+.grid-item-3 {
+  grid-column: 2;
+  grid-row: 3;
+}
