@@ -52,7 +52,7 @@ img {
   object-fit: cover;
 
   border: solid 1px grey;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 6px 6px 12px #aaaaaa, -6px -6px 12px #ffffff;
 }
 
