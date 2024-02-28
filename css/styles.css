@@ -278,8 +278,6 @@ img {
     display: grid;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    row-gap: 20px;
   }
 
   .grid-item-1 {
@@ -303,8 +301,6 @@ img {
     display: grid;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    row-gap: 20px;
   }
 
   .grid-item-1 {
